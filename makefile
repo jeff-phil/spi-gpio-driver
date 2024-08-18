@@ -39,7 +39,7 @@ PYLIB0 := onionSpi
 SOURCE_PYLIB0 := src/python/python-onion-spi.c
 OBJECT_PYLIB0 := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCE_PYLIB0:.$(SRCEXT)=.o))
 TARGET_PYLIB0 := $(PYLIBDIR)/$(PYLIB0).so
-LIB_PYLIB0 := -L$(LIBDIR) -loniondebug -lonionspi -lpython2.7
+LIB_PYLIB0 := -L$(LIBDIR) -loniondebug -lonionspi
 
 
 all: info $(TARGET_LIB0) $(TARGET_APP0) $(TARGET_PYLIB0)
